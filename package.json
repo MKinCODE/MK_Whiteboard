@@ -1,0 +1,53 @@
+{
+  "name": "mk-whiteboard",
+  "version": "1.0.0",
+  "description": "MK Whiteboard - 100% Local-first Infinite Drawing Canvas for Windows",
+  "main": "electron/main.cjs",
+  "author": "MK",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "start": "electron .",
+    "dist": "vite build && electron-builder --win --dir",
+    "dist:installer": "vite build && electron-builder --win nsis",
+    "dist:portable": "vite build && electron-builder --win portable"
+  },
+  "build": {
+    "appId": "com.mkwhiteboard.app",
+    "productName": "MK Whiteboard",
+    "copyright": "Copyright © 2026 MK Whiteboard",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "public/**/*"
+    ],
+    "win": {
+      "target": [
+        "dir"
+      ],
+      "icon": "public/assets/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "MK Whiteboard"
+    }
+  },
+  "dependencies": {
+    "canvas-confetti": "^1.9.4",
+    "lucide": "^1.16.0",
+    "perfect-freehand": "^1.2.2"
+  },
+  "devDependencies": {
+    "electron": "^34.2.0",
+    "electron-builder": "^25.1.8",
+    "vite": "^8.3.0"
+  }
+}

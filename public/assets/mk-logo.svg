@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- Light Theme Clean Flat Background -->
+  <rect x="24" y="24" width="464" height="464" rx="96" fill="#ffffff" stroke="#cbd5e1" stroke-width="12" />
+
+  <!-- Grid Blueprint Dots (Flat, Subtle) -->
+  <g fill="#94a3b8">
+    <circle cx="112" cy="112" r="6" />
+    <circle cx="184" cy="112" r="6" />
+    <circle cx="256" cy="112" r="6" />
+    <circle cx="328" cy="112" r="6" />
+    <circle cx="400" cy="112" r="6" />
+
+    <circle cx="112" cy="400" r="6" />
+    <circle cx="184" cy="400" r="6" />
+    <circle cx="256" cy="400" r="6" />
+    <circle cx="328" cy="400" r="6" />
+    <circle cx="400" cy="400" r="6" />
+  </g>
+
+  <!-- Solid 'M' Letterform (Flat Deep Slate #0f172a) -->
+  <path d="M 112 360 L 112 168 L 188 280 L 256 188 L 256 360"
+        fill="none"
+        stroke="#0f172a"
+        stroke-width="32"
+        stroke-linecap="round"
+        stroke-linejoin="round" />
+
+  <!-- Solid 'K' Letterform (Flat Precision Blue #0284c7) -->
+  <path d="M 296 168 L 296 360 M 392 168 L 296 272 L 396 360"
+        fill="none"
+        stroke="#0284c7"
+        stroke-width="32"
+        stroke-linecap="round"
+        stroke-linejoin="round" />
+</svg>
